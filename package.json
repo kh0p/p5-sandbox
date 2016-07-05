@@ -1,0 +1,28 @@
+{
+  "name": "p5-sandbox",
+  "version": "0.0.1",
+  "description": "p5.js Sandbox that allows to code live",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "p5",
+    "gulp"
+  ],
+  "author": "Kamil Żak (kh0p)",
+  "license": "MIT",
+  "devDependencies": {
+    "acorn": "^3.2.0",
+    "babel": "^6.5.2",
+    "browser-sync": "^2.13.0",
+    "es6-promise": "^3.2.1",
+    "eslint": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "p5": "^0.5.2"
+  }
+}
