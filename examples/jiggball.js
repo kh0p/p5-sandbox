@@ -1,8 +1,8 @@
-var bubbles = [];
+var bubbles = []
 
-function Bubble() {
-  this.x = random(0, width)
-  this.y = random(0, height)
+function Bubble(x, y) {
+  this.x = x
+  this.y = y
   this.display = () => {
     noFill()
     strokeWeight(4)
@@ -16,10 +16,10 @@ function Bubble() {
 }
 
 function setup() {
-  createCanvas(800, 600)
-  for(var i = 0; i < 44; i++) {
-   bubbles[i] = new Bubble()
-  }
+  createCanvas(640, 380)
+  /*for(var i = 0; i < 44; i++) {
+   bubbles[i] = new Bubble(random(0, width), random(0, height))
+  }*/
 }
 
 function draw() {
@@ -28,9 +28,12 @@ function draw() {
     bubbles[i].move()
     bubbles[i].display()
   }
+  if(bubbles.length > 44) {
+    bubbles.splice(0, 1)
+  }
 }
 
-function mousePressed() {
-  bubble = new Bubble()
+function mouseDragged() {
+  bubble = new Bubble(mouseX, mouseY)
   bubbles.push(bubble)
 }
