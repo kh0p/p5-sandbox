@@ -1,7 +1,9 @@
 function setup() {
-  createCanvas(640, 480);
-  background(0);
+  createCanvas(800, 600)
 }
 
 function draw() {
+  textAlign(CENTER)
+  textSize(32)
+  text("Write some code!", 400, 300)
 }
